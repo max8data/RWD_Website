@@ -1,2 +1,5 @@
 # RWD_Website
-stock buying/selling site
+Stock buying/selling site
+HTML/CSS/Bootstrap/Yahho API/
+Backend: Python/Flask/Jinja/Sqlite
+
