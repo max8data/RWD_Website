@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Stock Name</th>
+                <th>Shares</th>
+                <th>Record Price</th>
+                <th>Transaction Timestamp</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+                <td>{{ row.symbol }}</td>
+                <td>{{ row.shares }}</td>
+                <td>{{ row.price|usd }}</td>
+                <td>{{ row.timestamp }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td class="text-end" style="padding: 20px; font-size: 20px;"  colspan="3"><strong>Transaction Count : </strong></td>
+                <td class="text-start seperate" style="padding: 20px; font-size: 20px;" colspan="3"><strong>{{ counts }}</strong></td>
+            </tr>
+
+        </tfoot>
+    </table>
+
+{% endblock %}

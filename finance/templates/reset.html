@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    reset
+{% endblock %}
+
+{% block main %}
+    <form action="/reset" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="old_password" placeholder="Old Password" type="password">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="new_password" placeholder="New_Password" type="password">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="new_password_confirmation" placeholder="Confirm New Password" type="password">
+        </div>
+        <button class="btn btn-primary btn-lg space-2" type="submit">Hello New Password</button>
+    </form>
+{% endblock %}
