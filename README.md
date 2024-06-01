@@ -4,4 +4,4 @@ API使用: Yahho Finance API
 後端: Python/Flask/Jinja/Sqlite
 
 # JAVA作品
-Hangman猜字遊戲
+Wrodle猜字遊戲
