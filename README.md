@@ -5,3 +5,4 @@ API使用: Yahho Finance API
 
 # JAVA作品
 Wrodle猜字遊戲
+MultuThread多執行緒練習(112年考題)
